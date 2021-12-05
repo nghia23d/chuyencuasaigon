@@ -1,132 +1,974 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/themes/ccsg/style/images/favicon.png">
+    <title>Chuyện của sài gòn - Trang chủ </title>
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/type/icons.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/color/pink.css">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/font/font6.css">
+</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}
-        </style>
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+<body>
+    <div class="content-wrapper">
+        <nav class="navbar wide transparent absolute inverse-text navbar-expand-lg">
+            <div class="container-fluid flex-row justify-content-center">
+                <div class="navbar-header">
+                    <div class="navbar-brand"><a href="index.html"><img src="#" srcset="/themes/ccsg/style/images/logo2-light.png 1x, style/images/logo2-light@2x.png 2x" alt="" /></a></div>
+                    <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate"
+                            data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+                <!-- /.navbar-header -->
+                <div class="navbar-collapse collapse justify-content-between align-items-center">
+                    <ul class="navbar-nav plain mx-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Chuyện sài gòn</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Đi đâu - Ăn gì?</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nhiếp ảnh</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a> </li>
+                        {{-- <li class="nav-item"><a class="nav-link" href="#">Home</a>
+                            <ul class="dropdown-menu mega-menu boxed list-view text-left">
+                                <li class="mega-menu-content">
+                                    <div class="image-block-wrapper">
+                                        <div class="image-block col-lg-4 col-xl-5">
+                                            <div class="image-block-bg bg-image"
+                                                data-image-src="/themes/ccsg/style/images/art/me2.jpg"></div>
+                                        </div>
+                                        <!--/.image-block -->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-5">
+                                                    <div class="box">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="index.html">Home Demo 1</a></li>
+                                                                    <li><a href="index2.html">Home Demo 2</a></li>
+                                                                    <li><a href="index3.html">Home Demo 3</a></li>
+                                                                    <li><a href="index4.html">Home Demo 4</a></li>
+                                                                    <li><a href="index5.html">Home Demo 5</a></li>
+                                                                    <li><a href="index6.html">Home Demo 6</a></li>
+                                                                    <li><a href="index7.html">Home Demo 7</a></li>
+                                                                    <li><a href="index8.html">Home Demo 8</a></li>
+                                                                    <li><a href="index9.html">Home Demo 9</a></li>
+                                                                    <li><a href="index10.html">Home Demo 10</a></li>
+                                                                    <li><a href="index11.html">Home Demo 11</a></li>
+                                                                    <li><a href="index12.html">Home Demo 12</a></li>
+                                                                    <li><a href="index13.html">Home Demo 13</a></li>
+                                                                    <li><a href="index14.html">Home Demo 14</a></li>
+                                                                    <li><a href="index15.html">Home Demo 15</a></li>
+                                                                    <li><a href="index16.html">Home Demo 16</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="index17.html">Home Demo 17</a></li>
+                                                                    <li><a href="index18.html">Home Demo 18</a></li>
+                                                                    <li><a href="index19.html">Home Demo 19</a></li>
+                                                                    <li><a href="index20.html">Home Demo 20</a></li>
+                                                                    <li><a href="index21.html">Home Demo 21</a></li>
+                                                                    <li><a href="index22.html">Home Demo 22</a></li>
+                                                                    <li><a href="index23.html">Home Demo 23</a></li>
+                                                                    <li><a href="index24.html">Home Demo 24</a></li>
+                                                                    <li><a href="index25.html">Home Demo 25</a></li>
+                                                                    <li><a href="index26.html">Home Demo 26</a></li>
+                                                                    <li><a href="index27.html">Home Demo 27</a></li>
+                                                                    <li><a href="index28.html">Home Demo 28</a></li>
+                                                                    <li><a href="index29.html">Home Demo 29</a></li>
+                                                                    <li><a href="index30.html">Home Demo 30</a></li>
+                                                                    <li><a href="index31.html">Home Demo 31</a></li>
+                                                                    <li><a href="index32.html">Home Demo 32</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="index33.html">Home Demo 33</a></li>
+                                                                    <li><a href="index34.html">Home Demo 34</a></li>
+                                                                    <li><a href="index35.html">Home Demo 35</a></li>
+                                                                    <li><a href="index36.html">Home Demo 36</a></li>
+                                                                    <li><a href="index37.html">Home Demo 37</a></li>
+                                                                    <li><a href="index38.html">Home Demo 38</a></li>
+                                                                    <li><a href="index39.html">Home Demo 39</a></li>
+                                                                    <li><a href="index40.html">Home Demo 40</a></li>
+                                                                    <li><a href="index41.html">Home Demo 41</a></li>
+                                                                    <li><a href="index42.html">Home Demo 42</a></li>
+                                                                    <li><a href="index43.html">Home Demo 43</a></li>
+                                                                    <li><a href="index44.html">Home Demo 44</a></li>
+                                                                    <li><a href="index45.html">Home Demo 45</a></li>
+                                                                    <li><a href="index46.html">Home Demo 46</a></li>
+                                                                    <li><a href="index47.html">Home Demo 47</a></li>
+                                                                    <li><a href="index48.html">Home Demo 48</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                        </div>
+                                                        <!--/.row -->
+                                                    </div>
+                                                    <!-- /.box -->
+                                                </div>
+                                                <!--/column -->
+                                            </div>
+                                            <!--/.row -->
+                                        </div>
+                                        <!--/.container-fluid -->
+                                    </div>
+                                    <!--/.image-block-wrapper -->
+                                </li>
+                                <!--/.mega-menu-content-->
+                            </ul>
+                            <!--/.dropdown-menu -->
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Porfolio</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio.html">Text Style
+                                        I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio2.html">Text Style
+                                        II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio3.html">List
+                                        Type</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio4.html">One
+                                        Column</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio5.html">Two
+                                        Columns</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio6.html">Three
+                                        Columns</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio7.html">Video
+                                        Album</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="portfolio8.html">Photo
+                                        Album</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Gallery</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="gallery.html">Polaroid
+                                        Style</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery2.html">List Type</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery3.html">Three
+                                        Columns</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery4.html">Titled
+                                        Gallery</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery5.html">Lightbox -
+                                        Three Column Grid</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery6.html">Lightbox - Two
+                                        Column Grid</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="gallery7.html">Lightbox -
+                                        Fullscreen Grid</a></li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Gallery
+                                        Posts</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="gallery-post.html">Post with Carousel</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="gallery-post2.html">Post with Images</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="gallery-post3.html">Post with Lightbox</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="gallery-post4.html">Post with Thumbnail Slider</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="about.html">About I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="about2.html">About II</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="page-loading.html">Page
+                                        Loading</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="blog.html">Classic View No
+                                        Sidebar</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="blog2.html">Classic View with
+                                        Sidebar</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="blog3.html">Grid View I</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="blog4.html">Grid View II</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="blog5.html">Box Style with
+                                        Sidebar</a></li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle" href="#">Blog
+                                        Posts</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="blog-post.html">Post No Sidebar</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="blog-post2.html">Post with Sidebar</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="blog-post3.html">Post with Box Style</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Features</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Header</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="header.html">Simple
+                                                Centered</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="header2.html">Bordered Centered</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header3.html">Light
+                                                Centered</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header4.html">Dark
+                                                Centered</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header5.html">Light
+                                                Extended</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header6.html">Dark
+                                                Extended</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="header7.html">Simple Wide</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header8.html">Light
+                                                Wide</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="header9.html">Dark
+                                                Wide</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Slider</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider.html">Revolution Slider - Static Caption</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider2.html">Revolution Slider - Single Slide</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider3.html">Revolution Slider - Classic Fullscreen</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider4.html">Revolution Slider - Classic Fullwidth</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider5.html">Revolution Slider - Single Video</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider6.html">Revolution Slider - Static Caption Auto</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider7.html">Revolution Slider - Classic Caption Auto</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider8.html">Revolution Slider - Scroll Slider</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider9.html">Revolution Slider - Side Tab Slider</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider10.html">Revolution Slider - Split Slider I</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider11.html">Revolution Slider - Split Slider II</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider12.html">Revolution Slider - Fullscreen YouTube Video</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider13.html">Revolution Slider - Popup Video</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider14.html">Flickity - Thumbnail Slider</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider15.html">Flickity - Fullwidth Carousel</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="slider16.html">Flickity - Fullscreen View</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Footer</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="footer.html">Footer
+                                                I</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="footer2.html">Footer II</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="footer3.html">Footer III</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="footer4.html">Footer IV</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Fonts</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="font1.html">Louis
+                                                George Café</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="font2.html">Poppins</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="font3.html">IBM
+                                                Plex Serif</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="font4.html">Zilla
+                                                Slab</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="font5.html">Playfair Display</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="font6.html">Abhaya
+                                                Libre</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="font7.html">Quattrocento & Unica One</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Colors</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color1.html">Aqua</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color2.html">Blue</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color3.html">Brown</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color4.html">Green</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color5.html">Hibiscus</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color6.html">Lavender</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color7.html">Leaf</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color8.html">Meander</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color9.html">Orange</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color10.html">Pink</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color11.html">Purple</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color12.html">Red</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color13.html">Rose</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color14.html">Teal</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color15.html">Violet</a></li>
+                                        <li class="nav-item"><a class="dropdown-item"
+                                                href="color16.html">Yellow</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"><a class="dropdown-item dropdown-toggle"
+                                        href="#">Onepage</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="dropdown-item" href="index15.html">Demo
+                                                I</a></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="index24.html">Demo
+                                                II</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="box-layout.html">Box
+                                        Layout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Elements</a>
+                            <ul class="dropdown-menu mega-menu boxed list-view text-left">
+                                <li class="mega-menu-content">
+                                    <div class="image-block-wrapper">
+                                        <div class="image-block col-lg-4 col-xl-5">
+                                            <div class="image-block-bg bg-image"
+                                                data-image-src="/themes/ccsg/style/images/art/me1.jpg"></div>
+                                        </div>
+                                        <!--/.image-block -->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-5">
+                                                    <div class="box">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="accordion.html">Accordion</a></li>
+                                                                    <li><a href="alerts.html">Alerts</a></li>
+                                                                    <li><a href="blockquote.html">Blockquote</a></li>
+                                                                    <li><a href="buttons-badges.html">Buttons &
+                                                                            Badges</a></li>
+                                                                    <li><a href="caption.html">Caption</a></li>
+                                                                    <li><a href="color-box.html">Color Box</a></li>
+                                                                    <li><a href="countdown.html">Countdown</a></li>
+                                                                    <li><a href="counter.html">Counter</a></li>
+                                                                    <li><a href="dividers.html">Dividers</a></li>
+                                                                    <li><a href="dropcap.html">Dropcap</a></li>
+                                                                    <li><a href="forms.html">Forms</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="icon-solid.html">Icons - Solid</a></li>
+                                                                    <li><a href="icon-line.html">Icons - Line</a></li>
+                                                                    <li><a href="instagram-feed.html">Instagram Feed</a>
+                                                                    </li>
+                                                                    <li><a href="hover.html">Hover</a></li>
+                                                                    <li><a href="lightbox.html">Lightbox</a></li>
+                                                                    <li><a href="lists.html">Lists</a></li>
+                                                                    <li><a href="list-group.html">List Group</a></li>
+                                                                    <li><a href="player.html">Media Player</a></li>
+                                                                    <li><a href="pagination.html">Pagination</a></li>
+                                                                    <li><a href="pricing.html">Pricing Tables</a></li>
+                                                                    <li><a href="progressbar.html">Progress Bar</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                            <div class="col-lg-4">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="animations.html">Scroll Animations</a>
+                                                                    </li>
+                                                                    <li><a href="services-icon.html">Services - Icon</a>
+                                                                    </li>
+                                                                    <li><a href="services-image.html">Services -
+                                                                            Image</a></li>
+                                                                    <li><a href="social-icons.html">Social Icons</a>
+                                                                    </li>
+                                                                    <li><a href="tables.html">Tables</a></li>
+                                                                    <li><a href="tabs.html">Tabs</a></li>
+                                                                    <li><a href="team.html">Team</a></li>
+                                                                    <li><a href="testimonials.html">Testimonials</a>
+                                                                    </li>
+                                                                    <li><a href="tooltip-popover.html">Tooltip &
+                                                                            Popover</a></li>
+                                                                    <li><a href="typography.html">Typography</a></li>
+                                                                    <li><a href="wrappers.html">Wrappers</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!--/column -->
+                                                        </div>
+                                                        <!--/.row -->
+                                                    </div>
+                                                    <!-- /.box -->
+                                                </div>
+                                                <!--/column -->
+                                            </div>
+                                            <!--/.row -->
+                                        </div>
+                                        <!--/.container-fluid -->
+                                    </div>
+                                    <!--/.image-block-wrapper -->
+                                </li>
+                                <!--/.mega-menu-content-->
+                            </ul>
+                            <!--/.dropdown-menu -->
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Contact</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="contact.html">Contact I</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="contact2.html">Contact
+                                        II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="contact3.html">Contact
+                                        III</a></li>
+                            </ul>
+                        </li> --}}
+                    </ul>
                 </div>
-
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="social-wrapper text-right">
+                    <ul class="social social-mute social-s mb-0">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
+                <!--/.social-wrapper -->
             </div>
+        </nav>
+        <div class="wrapper image-wrapper no-overlay bg-image" data-image-src="/themes/ccsg/style/images/art/bg4.jpg">
+            <div class="container">
+                <div class="rev_slider_wrapper autowidth-container">
+                    <div id="slider9" class="rev_slider fullscreenbanner" data-version="5.4.7">
+                        <ul>
+                            <li data-transition="slideremovevertical"><img src="/themes/ccsg/style/images/dummy.png"
+                                    alt="" />
+                                <div class="tp-caption"
+                                    data-frames='[{"from":"y:top;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:bottom;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
+                                    data-visibility="['on','on','on','off']" data-width="none" data-height="none"
+                                    data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
+                                        data-lazyload="https://photo2.tinhte.vn/data/attachment-files/2021/08/5575256_CA103537-649C-49F1-937C-04472E58765E.jpg"
+                                        src="/themes/ccsg/style/images/dummy.png"
+                                        data-ww="['450px','450px','450px','525px']"
+                                        data-hh="['600px','600px','600px','700px']" width="450" height="600"
+                                        style="border-top-left-radius: 4px;border-bottom-left-radius: 4px;" alt="" />
+                                </div>
+                                <div class="tp-caption tp-shape tp-shapewrapper"
+                                    data-frames='[{"from":"y:bottom;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:top;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['450','450','450','400']" data-height="['600','600','600','630']"
+                                    data-responsive_offset="on" data-textalign="['center','center','center','center']"
+                                    data-type="shape" data-whitespace="nowrap"
+                                    style="z-index: 6;background-color:rgba(255,255,255,0.8);border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                                </div>
+                                <div class="tp-caption font-weight-700 color-dark"
+                                    data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['-125','-125,'-125,'-125]"
+                                    data-width="['450','450','450','400']" data-height="none"
+                                    data-fontsize="['30','30','30','30']" data-lineheight="['40','40','40','40']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="nowrap" style="z-index: 7;">Nghia23d</div>
+                                <div class="tp-caption font-body color-dark"
+                                    data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['300','300','300','250']" data-height="none"
+                                    data-fontsize="['18','18','18','18']" data-lineheight="['30','30','30','30']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="normal" style="z-index: 8;">. Nơi này thân thiện, chân tình từ ly cà phê vỉa hè cho đến những cuộc nói chuyện của người xa lạ, không khách sáo mà lại thân quen lạ lùng.</div>
+                                <a class="tp-caption btn" data-x="center" data-y="middle"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['140','140,'140,'140']"
+                                    data-width="['auto','auto','auto','auto']"
+                                    data-textAlign="['center','center','center','center']"
+                                    data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-responsive="on" data-responsive_offset="on" style="z-index: 9;" href="#">View
+                                    Images</a>
+                            </li>
+                            <li data-transition="slideremovevertical"><img src="/themes/ccsg/style/images/dummy.png"
+                                    alt="" />
+                                <div class="tp-caption"
+                                    data-frames='[{"from":"y:top;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:bottom;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
+                                    data-visibility="['on','on','on','off']" data-width="none" data-height="none"
+                                    data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
+                                        data-lazyload="https://kenh14cdn.com/2017/m1-49-1497069127941.jpg"
+                                        src="/themes/ccsg/style/images/dummy.png"
+                                        data-ww="['450px','450px','450px','525px']"
+                                        data-hh="['600px','600px','600px','700px']" width="450" height="600"
+                                        style="border-top-left-radius: 4px;border-bottom-left-radius: 4px;" alt="" />
+                                </div>
+                                <div class="tp-caption tp-shape tp-shapewrapper"
+                                    data-frames='[{"from":"y:bottom;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:top;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['450','450','450','400']" data-height="['600','600','600','630']"
+                                    data-responsive_offset="on" data-textalign="['center','center','center','center']"
+                                    data-type="shape" data-whitespace="nowrap"
+                                    style="z-index: 6;background-color:rgba(255,255,255,0.8);border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                                </div>
+                                <div class="tp-caption font-weight-700 color-dark"
+                                    data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['-125','-125,'-125,'-125]"
+                                    data-width="['450','450','450','400']" data-height="none"
+                                    data-fontsize="['30','30','30','30']" data-lineheight="['40','40','40','40']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="nowrap" style="z-index: 7;">Nghia23d</div>
+                                <div class="tp-caption font-body color-dark"
+                                    data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['300','300','300','250']" data-height="none"
+                                    data-fontsize="['18','18','18','18']" data-lineheight="['30','30','30','30']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="normal" style="z-index: 8;">Thời gian vội vã trôi, con người tấp nập với trăm công ngàn việc. Đó là thế kỷ công nghiệp hóa, hiện đại hóa. Đã bao giờ bạn thử sống chậm lại, suy nghĩ khác một chút và cảm nhận thế giới xung quanh, đặc biệt là nơi Sài Gòn nhộn nhịp?
+
+                                </div>
+                                <a class="tp-caption btn" data-x="center" data-y="middle"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['140','140,'140,'140']"
+                                    data-width="['auto','auto','auto','auto']"
+                                    data-textAlign="['center','center','center','center']"
+                                    data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-responsive="on" data-responsive_offset="on" style="z-index: 9;" href="#">View
+                                    Images</a>
+                            </li>
+                            <li data-transition="slideremovevertical"><img src="/themes/ccsg/style/images/dummy.png"
+                                    alt="" />
+                                <div class="tp-caption"
+                                    data-frames='[{"from":"y:top;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:bottom;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
+                                    data-visibility="['on','on','on','off']" data-width="none" data-height="none"
+                                    data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
+                                        data-lazyload="https://kenh14cdn.com/2017/m1-34-1497035178069.jpg"
+                                        src="/themes/ccsg/style/images/dummy.png"
+                                        data-ww="['450px','450px','450px','525px']"
+                                        data-hh="['600px','600px','600px','700px']" width="450" height="600"
+                                        style="border-top-left-radius: 4px;border-bottom-left-radius: 4px;" alt="" />
+                                </div>
+                                <div class="tp-caption tp-shape tp-shapewrapper"
+                                    data-frames='[{"from":"y:bottom;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:top;opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['450','450','450','400']" data-height="['600','600','600','630']"
+                                    data-responsive_offset="on" data-textalign="['center','center','center','center']"
+                                    data-type="shape" data-whitespace="nowrap"
+                                    style="z-index: 6;background-color:rgba(255,255,255,0.8);border-top-right-radius:4px;border-bottom-right-radius:4px;">
+                                </div>
+                                <div class="tp-caption font-weight-700 color-dark"
+                                    data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['-125','-125,'-125,'-125]"
+                                    data-width="['450','450','450','400']" data-height="none"
+                                    data-fontsize="['30','30','30','30']" data-lineheight="['40','40','40','40']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="nowrap" style="z-index: 7;">Nghia23d</div>
+                                <div class="tp-caption font-body color-dark"
+                                    data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-x="['center','center','center','center']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['0','0','0','0']"
+                                    data-width="['300','300','300','250']" data-height="none"
+                                    data-fontsize="['18','18','18','18']" data-lineheight="['30','30','30','30']"
+                                    data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                    data-type="text" data-whitespace="normal" style="z-index: 8;">Trà đá miễn phí, bánh mỳ miễn phí, cháo thịt bằm miễn phí và cả quần áo miễn phí. Người ta để ngay trên vỉa hè, ai đi ngang qua cần thì dừng lại lấy, khát nước thì uống ly trà, đói bụng thì lấy ổ bánh mỳ…vậy đó.
+
+                                </div>
+                                <a class="tp-caption btn" data-x="center" data-y="middle"
+                                    data-hoffset="['225','225','225','0']" data-voffset="['140','140,'140,'140']"
+                                    data-width="['auto','auto','auto','auto']"
+                                    data-textAlign="['center','center','center','center']"
+                                    data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                    data-responsive="on" data-responsive_offset="on" style="z-index: 9;" href="#">View
+                                    Images</a>
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom"></div>
+                    </div>
+                    <!-- /.rev_slider -->
+                </div>
+                <!-- /.rev_slider_wrapper -->
+            </div>
+            <!-- /.container -->
         </div>
-    </body>
+        <!-- /.wrapper -->
+        <div class="wrapper light-wrapper">
+            <div class="container inner">
+                <h2 class="section-title text-center">Sài Gòn chuyện chưa kể</h2>
+                <p class="lead text-center">
+                    Nhiều thứ đọng lại khiến ai đó muốn buông nhưng không nỡ, cứ đi rồi lại níu giữ như người tình yêu từ lâu lắm. Một kẻ đơn độc tìm tới Sài Gòn rồi yêu nơi này quá thể.
+
+
+                </p>
+                <div class="space30"></div>
+                <div class="tiles">
+                    <div class="row isotope grid boxed list-view">
+                        <div class="item grid-sizer col-md-6">
+                            <div class="bg-white shadow rounded">
+                                <div class="image-block-wrapper">
+                                    <div class="image-block col-lg-6">
+                                        <div class="image-block-bg bg-image"
+                                            data-image-src="/themes/ccsg/style/images/art/si11.jpg"></div>
+                                    </div>
+                                    <!--/.image-block -->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-6 offset-lg-6">
+                                                <div class="box d-flex">
+                                                    <div class="align-self-center">
+                                                        <h4 class="mb-15">Engagement<br />Photography</h4>
+                                                        <p>Etiam porta sem malesuada magna mollis euismod.</p>
+                                                        <div class="arrow-link"><a href="#"
+                                                                class="text-muted">See Gallery <i
+                                                                    class="mi-arrow-right"></i></a> </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.box -->
+                                            </div>
+                                            <!--/column -->
+                                        </div>
+                                        <!--/.row -->
+                                    </div>
+                                    <!--/.container-fluid -->
+                                </div>
+                                <!--/.image-block-wrapper -->
+                            </div>
+                            <!-- /.bg -->
+                        </div>
+                        <!-- /.item -->
+                        <div class="item grid-sizer col-md-6">
+                            <div class="bg-white shadow rounded">
+                                <div class="image-block-wrapper">
+                                    <div class="image-block col-lg-6">
+                                        <div class="image-block-bg bg-image"
+                                            data-image-src="/themes/ccsg/style/images/art/si12.jpg"></div>
+                                    </div>
+                                    <!--/.image-block -->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-6 offset-lg-6">
+                                                <div class="box d-flex">
+                                                    <div class="align-self-center">
+                                                        <h4 class="mb-15">Wedding<br />Photography</h4>
+                                                        <p>Etiam porta sem malesuada magna mollis euismod.</p>
+                                                        <div class="arrow-link"><a href="#"
+                                                                class="text-muted">See Gallery <i
+                                                                    class="mi-arrow-right"></i></a> </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.box -->
+                                            </div>
+                                            <!--/column -->
+                                        </div>
+                                        <!--/.row -->
+                                    </div>
+                                    <!--/.container-fluid -->
+                                </div>
+                                <!--/.image-block-wrapper -->
+                            </div>
+                            <!-- /.bg -->
+                        </div>
+                        <!-- /.item -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.tiles -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper dark-wrapper inverse-text">
+            <div class="container inner">
+                <h2 class="section-title text-center">Behind the Scenes</h2>
+                <p class="lead larger text-center">I would like to give you a unique photography and video experience,
+                    built to serve you best and<br class="d-none d-xl-block" /> capture your special moments for you
+                    and your families creatively and
+                    beautifully</p>
+                <div class="space30"></div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="94837904"></div>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/themes/ccsg/style/images/art/bg2.jpg">
+            <div class="container inner pt-150 pb-150">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="cube-slider cbp-slider-edge cbp">
+                            <div class="cbp-item">
+                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
+                                    <p>Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Duis mollis, est non commodo luctus.</p>
+                                    <footer class="blockquote-footer">Connor Gibson</footer>
+                                </blockquote>
+                            </div>
+                            <!-- /.cbp-item -->
+                            <div class="cbp-item">
+                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
+                                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+                                        id ligula porta felis euismod semper eget quam integer. </p>
+                                    <footer class="blockquote-footer">Coriss Ambady</footer>
+                                </blockquote>
+                            </div>
+                            <!-- /.cbp-item -->
+                            <div class="cbp-item">
+                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
+                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                                        odio sem nec elit. Cras justo odio, dapibus ac facilisis.</p>
+                                    <footer class="blockquote-footer">Barclay Widerski</footer>
+                                </blockquote>
+                            </div>
+                            <!-- /.cbp-item -->
+                            <div class="cbp-item">
+                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam aenean lacinia.
+                                        Curabitur blandit tempus in egestas consectetur.</p>
+                                    <footer class="blockquote-footer">Nikola Brooten</footer>
+                                </blockquote>
+                            </div>
+                            <!-- /.cbp-item -->
+                        </div>
+                        <!-- /.cbp -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper light-wrapper">
+            <div class="container inner">
+                <h2 class="section-title text-center">Featured Shots</h2>
+                <p class="lead larger text-center">Great photography comes with understanding customer needs</p>
+                <div class="cube-carousel cbp boxed grid-view text-center">
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g10.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Rory & Jess</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g11.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Alison & Cole</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g12.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Blair & Dean</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g13.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Jasmine & Crosby</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g14.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Sarah & Mike</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g15.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Kate & Jack</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                    <div class="cbp-item">
+                        <div class="box bg-white shadow p-30">
+                            <figure class="main polaroid overlay overlay1"><a href="#"><img
+                                        src="/themes/ccsg/style/images/art/g16.jpg" alt="" /></a>
+                                <figcaption>
+                                    <h5 class="text-uppercase from-top mb-0">See Gallery</h5>
+                                </figcaption>
+                            </figure>
+                            <h4 class="mb-0">Meredith & Derek</h4>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.cbp-item -->
+                </div>
+                <!-- /.cbp -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper gray-wrapper">
+            <div class="container inner">
+                <h2 class="section-title text-center">Instagram Feed</h2>
+                <p class="lead text-center">Here you will find the latest shots from our Instagram feed.</p>
+                <div class="space20"></div>
+                <div class="tiles tiles-s">
+                    <div id="instafeed-wedding" class="items row"></div>
+                </div>
+                <!--/.tiles -->
+                <div class="space40"></div>
+                <div class="text-center"><a href="#" class="btn btn-white shadow">Instagram Page</a></div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <footer class="dark-wrapper inverse-text">
+            <div class="container inner">
+                <div class="row d-md-flex align-items-md-center">
+                    <div class="col-md-4 text-center text-md-left">
+                        <p class="mb-0">
+
+                            ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            Bản quyền thuộc về
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <a class="text-white font-weight-normal" href="https://nghia23d.com" target="_blank">
+                                <b> Nghia23d</b></a>
+                        </p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-4 text-center">
+                        <img src="#"
+                            srcset="/themes/ccsg/style/images/logo-light.png 1x, /themes/ccsg/style/images/logo-light@2x.png 2x"
+                            alt="" />
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-4 text-center text-md-right">
+                        <ul class="social social-mute social-s mt-10">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+    <!-- /.content-wrapper -->
+    <script src="/themes/ccsg/style/js/jquery.min.js"></script>
+    <script src="/themes/ccsg/style/js/popper.min.js"></script>
+    <script src="/themes/ccsg/style/js/bootstrap.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems! The following part can be removed on Server for On Demand Loading) -->
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="/themes/ccsg/style/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="/themes/ccsg/style/js/plugins.js"></script>
+    <script src="/themes/ccsg/style/js/scripts.js"></script>
+</body>
+
 </html>
