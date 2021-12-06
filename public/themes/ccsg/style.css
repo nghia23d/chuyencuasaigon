@@ -810,7 +810,7 @@ acronym[title] {
     text-transform: uppercase;
 }
 .navbar.fixed .navbar-brand img {
-    height: 30px !important;
+    height: 75px !important;
     width: auto !important;
 }
 .navbar-nav.sm-collapsible .dropdown-menu .dropdown-menu {

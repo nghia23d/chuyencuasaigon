@@ -23,7 +23,7 @@
         <nav class="navbar wide transparent absolute inverse-text navbar-expand-lg">
             <div class="container-fluid flex-row justify-content-center">
                 <div class="navbar-header">
-                    <div class="navbar-brand"><a href="index.html"><img src="#" srcset="/themes/ccsg/style/images/logo2-light.png 1x, style/images/logo2-light@2x.png 2x" alt="" /></a></div>
+                    <div class="navbar-brand"><a href="index.html"><img src="#" srcset="/themes/ccsg/style/images/ccsg.png 1x, style/images/ccsg.png 2x" alt="" /></a></div>
                     <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate"
                             data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div>
                 </div>
