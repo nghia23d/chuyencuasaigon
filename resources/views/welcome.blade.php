@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/themes/ccsg/style/images/favicon.png">
-    <title>Chuyện của sài gòn - Trang chủ </title>
+    <title>Trang chủ - Chuyện của Sài Gòn</title>
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/revolution/css/settings.css">
@@ -13,9 +13,8 @@
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/revolution/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/type/icons.css">
     <link rel="stylesheet" type="text/css" href="/themes/ccsg/style.css">
-    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/color/pink.css">
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/font/font6.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/color/purple.css">
+    <link rel="stylesheet" type="text/css" href="/themes/ccsg/style/css/font/font4.css">
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                 <div class="navbar-collapse collapse justify-content-between align-items-center">
                     <ul class="navbar-nav plain mx-auto text-center">
                         <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Chuyện sài gòn</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Chuyện Sài Gòn</a> </li>
                         <li class="nav-item"><a class="nav-link" href="#">Đi đâu - Ăn gì?</a> </li>
                         <li class="nav-item"><a class="nav-link" href="#">Nhiếp ảnh</a> </li>
                         <li class="nav-item"><a class="nav-link" href="#">Blog</a> </li>
@@ -486,7 +485,7 @@
                                     data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
                                     data-visibility="['on','on','on','off']" data-width="none" data-height="none"
                                     data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
-                                        data-lazyload="https://photo2.tinhte.vn/data/attachment-files/2021/08/5575256_CA103537-649C-49F1-937C-04472E58765E.jpg"
+                                        data-lazyload="/themes/ccsg/style/images/saigon/banner1.jpg"
                                         src="/themes/ccsg/style/images/dummy.png"
                                         data-ww="['450px','450px','450px','525px']"
                                         data-hh="['600px','600px','600px','700px']" width="450" height="600"
@@ -537,7 +536,7 @@
                                     data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
                                     data-visibility="['on','on','on','off']" data-width="none" data-height="none"
                                     data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
-                                        data-lazyload="https://kenh14cdn.com/2017/m1-49-1497069127941.jpg"
+                                        data-lazyload="/themes/ccsg/style/images/saigon/banner2.jpg"
                                         src="/themes/ccsg/style/images/dummy.png"
                                         data-ww="['450px','450px','450px','525px']"
                                         data-hh="['600px','600px','600px','700px']" width="450" height="600"
@@ -590,7 +589,7 @@
                                     data-hoffset="['-225','-225','-225','0']" data-voffset="['0','0','0','0']"
                                     data-visibility="['on','on','on','off']" data-width="none" data-height="none"
                                     data-type="image" data-responsive_offset="on" style="z-index: 5;"><img
-                                        data-lazyload="https://kenh14cdn.com/2017/m1-34-1497035178069.jpg"
+                                        data-lazyload="/themes/ccsg/style/images/saigon/banner3.jpg"
                                         src="/themes/ccsg/style/images/dummy.png"
                                         data-ww="['450px','450px','450px','525px']"
                                         data-hh="['600px','600px','600px','700px']" width="450" height="600"
@@ -660,7 +659,7 @@
                                 <div class="image-block-wrapper">
                                     <div class="image-block col-lg-6">
                                         <div class="image-block-bg bg-image"
-                                            data-image-src="/themes/ccsg/style/images/art/si11.jpg"></div>
+                                            data-image-src="/themes/ccsg/style/images/saigon/index-sg-1.jpg"></div>
                                     </div>
                                     <!--/.image-block -->
                                     <div class="container-fluid">
@@ -668,10 +667,10 @@
                                             <div class="col-lg-6 offset-lg-6">
                                                 <div class="box d-flex">
                                                     <div class="align-self-center">
-                                                        <h4 class="mb-15">Engagement<br />Photography</h4>
-                                                        <p>Etiam porta sem malesuada magna mollis euismod.</p>
+                                                        <h4 class="mb-15">Sài Gòn nay</h4>
+                                                        <p>Những chiếc album thú vị về Sài Gòn ngày nay ở thể kỷ 21 và là một thế hệ đặc biệt.</p>
                                                         <div class="arrow-link"><a href="#"
-                                                                class="text-muted">See Gallery <i
+                                                                class="text-muted">Xem thêm <i
                                                                     class="mi-arrow-right"></i></a> </div>
                                                     </div>
                                                 </div>
@@ -693,7 +692,7 @@
                                 <div class="image-block-wrapper">
                                     <div class="image-block col-lg-6">
                                         <div class="image-block-bg bg-image"
-                                            data-image-src="/themes/ccsg/style/images/art/si12.jpg"></div>
+                                            data-image-src="/themes/ccsg/style/images/saigon/index-sg-2.jpg"></div>
                                     </div>
                                     <!--/.image-block -->
                                     <div class="container-fluid">
@@ -701,10 +700,10 @@
                                             <div class="col-lg-6 offset-lg-6">
                                                 <div class="box d-flex">
                                                     <div class="align-self-center">
-                                                        <h4 class="mb-15">Wedding<br />Photography</h4>
-                                                        <p>Etiam porta sem malesuada magna mollis euismod.</p>
+                                                        <h4 class="mb-15">Sài Gòn xưa</h4>
+                                                        <p>Hãy cùng quay ngược thời gian, trở về và chìm đắm trong hình ảnh Sài Gòn của những ngày xưa qua.                                                        </p>
                                                         <div class="arrow-link"><a href="#"
-                                                                class="text-muted">See Gallery <i
+                                                                class="text-muted">Xem thêm <i
                                                                     class="mi-arrow-right"></i></a> </div>
                                                     </div>
                                                 </div>
@@ -729,7 +728,7 @@
             <!-- /.container -->
         </div>
         <!-- /.wrapper -->
-        <div class="wrapper dark-wrapper inverse-text">
+        {{-- <div class="wrapper dark-wrapper inverse-text">
             <div class="container inner">
                 <h2 class="section-title text-center">Behind the Scenes</h2>
                 <p class="lead larger text-center">I would like to give you a unique photography and video experience,
@@ -746,50 +745,11 @@
                 <!-- /.row -->
             </div>
             <!-- /.container -->
-        </div>
+        </div> --}}
         <!-- /.wrapper -->
-        <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/themes/ccsg/style/images/art/bg2.jpg">
-            <div class="container inner pt-150 pb-150">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="cube-slider cbp-slider-edge cbp">
-                            <div class="cbp-item">
-                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
-                                    <p>Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Duis mollis, est non commodo luctus.</p>
-                                    <footer class="blockquote-footer">Connor Gibson</footer>
-                                </blockquote>
-                            </div>
-                            <!-- /.cbp-item -->
-                            <div class="cbp-item">
-                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
-                                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
-                                        id ligula porta felis euismod semper eget quam integer. </p>
-                                    <footer class="blockquote-footer">Coriss Ambady</footer>
-                                </blockquote>
-                            </div>
-                            <!-- /.cbp-item -->
-                            <div class="cbp-item">
-                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
-                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                                        odio sem nec elit. Cras justo odio, dapibus ac facilisis.</p>
-                                    <footer class="blockquote-footer">Barclay Widerski</footer>
-                                </blockquote>
-                            </div>
-                            <!-- /.cbp-item -->
-                            <div class="cbp-item">
-                                <blockquote class="icon icon-top larger text-center pl-60 pr-60">
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam aenean lacinia.
-                                        Curabitur blandit tempus in egestas consectetur.</p>
-                                    <footer class="blockquote-footer">Nikola Brooten</footer>
-                                </blockquote>
-                            </div>
-                            <!-- /.cbp-item -->
-                        </div>
-                        <!-- /.cbp -->
-                    </div>
-                    <!-- /column -->
-                </div>
+        <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/themes/ccsg/style/images/saigon/muaroi.gif">
+            <div class="container inner pt-200 pb-200">
+                <h1 class="heading text-center">Mưa thì sao chứ? <br class="d-none d-lg-block">Hãy làm tất cả những điều tuyệt vời cùng nhau!</h1>
                 <!-- /.row -->
             </div>
             <!-- /.container -->
@@ -797,8 +757,8 @@
         <!-- /.wrapper -->
         <div class="wrapper light-wrapper">
             <div class="container inner">
-                <h2 class="section-title text-center">Featured Shots</h2>
-                <p class="lead larger text-center">Great photography comes with understanding customer needs</p>
+                <h2 class="section-title text-center">Album nổi bật</h2>
+                <p class="lead larger text-center">Những chiếc ảnh <i>"xinhxan"</i>  tại ChuyenCuaSaiGon</p>
                 <div class="cube-carousel cbp boxed grid-view text-center">
                     <div class="cbp-item">
                         <div class="box bg-white shadow p-30">
@@ -896,60 +856,314 @@
             </div>
             <!-- /.container -->
         </div>
-        <!-- /.wrapper -->
-        <div class="wrapper gray-wrapper">
-            <div class="container inner">
-                <h2 class="section-title text-center">Instagram Feed</h2>
-                <p class="lead text-center">Here you will find the latest shots from our Instagram feed.</p>
-                <div class="space20"></div>
-                <div class="tiles tiles-s">
-                    <div id="instafeed-wedding" class="items row"></div>
-                </div>
-                <!--/.tiles -->
-                <div class="space40"></div>
-                <div class="text-center"><a href="#" class="btn btn-white shadow">Instagram Page</a></div>
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.wrapper -->
-        <footer class="dark-wrapper inverse-text">
-            <div class="container inner">
-                <div class="row d-md-flex align-items-md-center">
-                    <div class="col-md-4 text-center text-md-left">
-                        <p class="mb-0">
-
-                            ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            Bản quyền thuộc về
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                            <a class="text-white font-weight-normal" href="https://nghia23d.com" target="_blank">
-                                <b> Nghia23d</b></a>
-                        </p>
+        <div class="wrapper dark-wrapper">
+            <div class="image-block-wrapper">
+              <div class="image-block col-lg-6">
+                <div class="image-block-bg bg-image" data-image-src="themes/ccsg/style/images/saigon/banner4.jpg" style="background-image: url(&quot;style/images/art/bg14.jpg&quot;);"></div>
+              </div>
+              <!--/.image-block -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 offset-lg-6">
+                    <div class="box pl-s-0 pr-s-0">
+                      <h2 class="section-title">Great ideas are made<br class="d-none d-xl-block"> to be experienced</h2>
+                      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna.</p>
+                      <div class="space20"></div>
+                      <div class="d-flex flex-row justify-content-center">
+                        <div>
+                          <div class="icon fs-30 icon-bg icon-bg-s bg-pastel-default color-dark mr-25"> <span class="number">1</span> </div>
+                        </div>
+                        <div>
+                          <h5>Collect &amp; Concept</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.</p>
+                        </div>
+                      </div>
+                      <div class="space10"></div>
+                      <div class="d-flex flex-row justify-content-center">
+                        <div>
+                          <div class="icon fs-30 icon-bg icon-bg-s bg-pastel-default color-dark mr-25"> <span class="number">2</span> </div>
+                        </div>
+                        <div>
+                          <h5>Prepare &amp; Shoot</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.</p>
+                        </div>
+                      </div>
+                      <div class="space10"></div>
+                      <div class="d-flex flex-row justify-content-center">
+                        <div>
+                          <div class="icon fs-30 icon-bg icon-bg-s bg-pastel-default color-dark mr-25"> <span class="number">3</span> </div>
+                        </div>
+                        <div>
+                          <h5>Retouch &amp; Finalize</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget.</p>
+                        </div>
+                      </div>
                     </div>
-                    <!--/column -->
-                    <div class="col-md-4 text-center">
-                        <img src="#"
-                            srcset="/themes/ccsg/style/images/logo-light.png 1x, /themes/ccsg/style/images/logo-light@2x.png 2x"
-                            alt="" />
-                    </div>
-                    <!--/column -->
-                    <div class="col-md-4 text-center text-md-right">
-                        <ul class="social social-mute social-s mt-10">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                    <!--/column -->
+                    <!--/.box -->
+                  </div>
+                  <!--/column -->
                 </div>
                 <!--/.row -->
+              </div>
+              <!--/.container-fluid -->
+            </div>
+            <!--/.image-block-wrapper -->
+          </div>
+          <div class="wrapper light-wrapper">
+            <div class="container inner">
+              <h2 class="section-title text-center">From My Journal</h2>
+              <div class="cube-carousel cbp grid-view">
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb19.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Ligula tristique quis risus eget urna mollis ornare porttitor</a></h2>
+                  <div class="meta mb-15"><span class="date">5 Jul 2018</span><span class="comments"><a href="#">3</a></span><span class="category"><a href="#">Reflection</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb20.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Nullam id dolor elit id nibh pharetra augue venenatis</a></h2>
+                  <div class="meta mb-15"><span class="date">18 Jun 2018</span><span class="comments"><a href="#">5</a></span><span class="category"><a href="#">Entertainment</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb21.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Ultricies fusce porta elit pharetra augue faucibus</a></h2>
+                  <div class="meta mb-15"><span class="date">14 May 2018</span><span class="comments"><a href="#">7</a></span><span class="category"><a href="#">Travel</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb22.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Morbi leo risus porta eget metus est non commodolacus</a></h2>
+                  <div class="meta mb-15"><span class="date">9 Apr 2018</span><span class="comments"><a href="#">4</a></span><span class="category"><a href="#">Beach</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb23.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Mollis adipiscing lorem quis mollis eget lacinia faucibus</a></h2>
+                  <div class="meta mb-15"><span class="date">23 Feb 2018</span><span class="comments"><a href="#">8</a></span><span class="category"><a href="#">Travel</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb24.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Fusce mattis euismod sed diam eget risus amet tempus</a></h2>
+                  <div class="meta mb-15"><span class="date">15 Jan 2018</span><span class="comments"><a href="#">7</a></span><span class="category"><a href="#">Building</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb25.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Tellus vulputate non magna eget urna mollis lacinia mollis</a></h2>
+                  <div class="meta mb-15"><span class="date">12 Dec 2017</span><span class="comments"><a href="#">3</a></span><span class="category"><a href="#">Travel</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb26.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Elit parturient tristique ornare vel ornare posuere porttitor</a></h2>
+                  <div class="meta mb-15"><span class="date">25 Nov 2017</span><span class="comments"><a href="#">2</a></span><span class="category"><a href="#">Perspective</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+                <div class="cbp-item">
+                  <figure class="overlay overlay1 mb-30 rounded"><a href="#"> <img src="/themes/ccsg/style/images/art/gb27.jpg" alt="" /></a>
+                    <figcaption>
+                      <h5 class="text-uppercase from-top mb-0">Read More</h5>
+                    </figcaption>
+                  </figure>
+                  <h2 class="post-title mb-10"><a href="blog-post.html">Condimentum vehicula vitae elit libero lacinia interdum</a></h2>
+                  <div class="meta mb-15"><span class="date">4 Oct 2017</span><span class="comments"><a href="#">5</a></span><span class="category"><a href="#">Music</a></span></div>
+                  <div class="post-content">
+                    <p>Morbi leo risus, porta ac consectetur luctus vestibulum at eros. Maecenas faucibus mollis interdum eget nulla vitae elit libero.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!-- /.post -->
+              </div>
+              <!-- /.cbp -->
             </div>
             <!-- /.container -->
-        </footer>
+          </div>
+     
+        <footer class="wrapper bg-pastel-default">
+            <div class="container inner">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Bài viết nổi bật</h3>
+                    <ul class="image-list">
+                      <li>
+                        <figure class="rounded"><a href="blog-post.html"><img src="themes/ccsg/style/images/art/a16.jpg" alt=""></a></figure>
+                        <div class="post-content">
+                          <h6 class="post-title"> <a href="blog-post.html">Magna Mollis Ornare</a> </h6>
+                          <div class="meta"><span class="date">12 Nov 2014</span><span class="comments"><a href="#">4</a></span></div>
+                        </div>
+                      </li>
+                      <li>
+                        <figure class="rounded"> <a href="blog-post.html"><img src="themes/ccsg/style/images/art/a17.jpg" alt=""></a></figure>
+                        <div class="post-content">
+                          <h6 class="post-title"> <a href="blog-post.html">Nullam Risus Cursus</a> </h6>
+                          <div class="meta"><span class="date">12 Nov 2014</span><span class="comments"><a href="#">4</a></span></div>
+                        </div>
+                      </li>
+                      <li>
+                        <figure class="rounded"><a href="blog-post.html"><img src="themes/ccsg/style/images/art/a18.jpg" alt=""></a></figure>
+                        <div class="post-content">
+                          <h6 class="post-title"> <a href="blog-post.html">Blandit Tempus Fusce</a> </h6>
+                          <div class="meta"><span class="date">12 Nov 2014</span><span class="comments"><a href="#">4</a></span></div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- /.image-list -->
+                  </div>
+                  <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Tags</h3>
+                    <ul class="list-unstyled tag-list">
+                      <li><a href="#" class="btn btn-white shadow">Still Life</a></li>
+                      <li><a href="#" class="btn btn-white shadow">Urban</a></li>
+                      <li><a href="#" class="btn btn-white shadow">Nature</a></li>
+                      <li><a href="#" class="btn btn-white shadow">Landscape</a></li>
+                    </ul>
+                  </div>
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Chuyên mục</h3>
+                    <ul class="unordered-list column-2">
+                      <li><a href="#" class="nocolor">Lifestyle (21)</a></li>
+                      <li><a href="#" class="nocolor">Photo (19)</a></li>
+                      <li><a href="#" class="nocolor">Journal (16)</a></li>
+                      <li><a href="#" class="nocolor">Works (7)</a></li>
+                      <li><a href="#" class="nocolor">Still Life (9)</a></li>
+                      <li><a href="#" class="nocolor">Travel (17)</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Liên hệ</h3>
+                    <address>
+                      <strong>ChuyenCuaSaiGon</strong><br> Moon Street Light Avenue, 14/05 <br> Jupiter, JP 80630<br>
+                      <abbr title="Phone">P:</abbr> 00 (123) 456 78 90 <br>
+                      <abbr title="Email">E:</abbr> <a href="mailto:#" class="nocolor">nghia23d@gmail.com</a>
+                    </address>
+                  </div>
+                  <!-- /.widget -->
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Mạng Xã hội</h3>
+                    <ul class="social social-mute social-s mt-10 mb-0">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                      <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Hơn nữa!</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="nocolor">About Us</a></li>
+                      <li><a href="#" class="nocolor">Our Story</a></li>
+                      <li><a href="#" class="nocolor">Projects</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.widget -->
+                  <div class="widget">
+                    <h3 class="widget-title text-uppercase">Về Sài Gòn</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="nocolor">Support</a></li>
+                      <li><a href="#" class="nocolor">Get Started</a></li>
+                      <li><a href="#" class="nocolor">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.widget -->
+                </div>
+                <!-- /column -->
+              </div>
+              <!--/.row -->
+              <div class="space30"></div>
+              <p class="text-center mb-0">
+
+                ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Bản quyền thuộc về:
+            
+                <a class="text-white font-weight-normal" href="https://nghia23d.com" target="_blank">
+                    <b class="text-dark"> Nghia23d</b></a>
+            </p>
+            </div>
+            <!-- /.container -->
+          </footer>
     </div>
     <!-- /.content-wrapper -->
     <script src="/themes/ccsg/style/js/jquery.min.js"></script>
