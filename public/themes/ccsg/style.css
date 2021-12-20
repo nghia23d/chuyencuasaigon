@@ -2711,6 +2711,7 @@ footer [class*="col-"] .widget:first-child {
 figure.overlay img {
     opacity: 1;
     width: 100%;
+    height: 400px;
     max-width: 100%;
     vertical-align: top;
     position: relative;

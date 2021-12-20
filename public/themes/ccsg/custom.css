@@ -1,0 +1,51 @@
+.zoom {
+    transition: transform 0.8s; /* Animation */
+  }
+
+  .zoom:hover {
+    transform: scale(1.15);
+  }
+
+  .rsolution-scrollbar {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .rsolution-scrollbar::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  .rsolution-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  
+  .rsolution-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c757d;
+  }
+  
+  .rsolution-scrollbar-xl {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .rsolution-scrollbar-xl::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  .rsolution-scrollbar-xl::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+  
+  .rsolution-scrollbar-xl::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c757d;
+  }
+
+  .rsolution-scrollbar::-webkit-scrollbar-thumb:active, .rsolution-scrollbar-xl::-webkit-scrollbar-thumb:active {
+    background-color: #343a40!important
+  }
