@@ -1,7 +1,7 @@
   <!-- /.wrapper -->
   <div class="wrapper light-wrapper">
     <div class="container inner">
-        <h2 class="section-title text-center">Sài Gòn chuyện chưa kể</h2>
+        <h1 class="section-title text-center">ChuyenCuaSaiGon những thứ "chưa kể"</h2>
         <p class="lead text-center">
             Nhiều thứ đọng lại khiến ai đó muốn buông nhưng không nỡ, cứ đi rồi lại níu giữ như người tình yêu
             từ lâu lắm. Một kẻ đơn độc tìm tới Sài Gòn rồi yêu nơi này quá thể.
