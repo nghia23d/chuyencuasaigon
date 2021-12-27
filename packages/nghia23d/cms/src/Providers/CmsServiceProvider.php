@@ -28,8 +28,8 @@ class CmsServiceProvider extends ServiceProvider
             CreateAdmin::class,
         ]);
         View::composer([
-                // 'cms::pages.blog*',
-                '*'
+                'cms::pages.blog*',
+                'blocks.menu'
             ],
         'nghia23d\cms\Libraries\ViewComposers\CategoryComposer'
         );

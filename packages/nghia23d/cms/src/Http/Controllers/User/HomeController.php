@@ -13,21 +13,21 @@ use nghia23d\cms\Models\Review;
 
 class HomeController
 {
-    public function __construct()
-    {
-        $this->blogModel = new Blog();
-    }
+    // public function __construct()
+    // {
+    //     $this->blogModel = new Blog();
+    // }
 
     public function pageHome()
     {
-        $data =  (object) [
-          'slider'         => (new Slider())->getDataActive(3),
-          'questionAsk'    => (new QuestionAsk())->getDataActive(),
-          'review'         => (new Review())->getDataActive(),
-          'blogHightLight' => $this->blogModel->getBlogHighLight(10),
-        ];
+        // $data =  (object) [
+        // //   'slider'         => (new Slider())->getDataActive(3),
+        // //   'questionAsk'    => (new QuestionAsk())->getDataActive(),
+        // //   'review'         => (new Review())->getDataActive(),
+        // //   'blogHightLight' => $this->blogModel->getBlogHighLight(10),
+        // ];
 
-        return view('home', compact('data'));
+        return view('home');
     }
 
     public function pageBlog()

@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
         nghia23d\cms\Providers\CmsServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
