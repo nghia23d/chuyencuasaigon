@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-4">
 
-                <img class="img-fluid" src="/themes/ccsg/style/images/ccsg-dark.png">
+                <img class="img-fluid" src="/themes/{{ $theme }}/style/images/ccsg-dark.png">
                 <br>
                 <br>
 

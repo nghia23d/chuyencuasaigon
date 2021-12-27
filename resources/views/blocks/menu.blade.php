@@ -2,7 +2,7 @@
     <div class="container-fluid flex-row justify-content-center">
         <div class="navbar-header">
             <div class="navbar-brand"><a href="index.html"><img src="#"
-                        srcset="/themes/ccsg/style/images/ccsg.png 1x, style/images/ccsg.png 2x" alt="" /></a>
+                        srcset="/themes/{{ $theme }}/style/images/ccsg.png 1x, style/images/ccsg.png 2x" alt="" /></a>
             </div>
             <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate"
                     data-toggle="collapse" data-target=".navbar-collapse"><span></span></button></div>
@@ -10,18 +10,20 @@
         <div class="navbar-collapse collapse justify-content-between align-items-center">
             <ul class="navbar-nav plain mx-auto text-center">
                 <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a> </li>
-                <li class="nav-item"><a class="nav-link" href="#">Chuyện Sài Gòn</a> </li>
-                <li class="nav-item"><a class="nav-link" href="#">Đi đâu - Ăn gì?</a> </li>
-                <li class="nav-item"><a class="nav-link" href="#">Nhiếp ảnh</a> </li>
+
+                @foreach ($categories as $value)
+                <li class="nav-item"><a class="nav-link" href="/chuyen-muc/{{$value->slug_title}}.html">{{$value->title}}</a> </li>
+                @endforeach
+
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a> </li>
-                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a> </li>
+                <li class="nav-item"><a class="nav-link" href="{{asset('lien-he.html')}}">Liên hệ</a> </li>
                 {{-- <li class="nav-item"><a class="nav-link" href="#">Home</a>
                     <ul class="dropdown-menu mega-menu boxed list-view text-left">
                         <li class="mega-menu-content">
                             <div class="image-block-wrapper">
                                 <div class="image-block col-lg-4 col-xl-5">
                                     <div class="image-block-bg bg-image"
-                                        data-image-src="/themes/ccsg/style/images/art/me2.jpg"></div>
+                                        data-image-src="/themes/{{ $theme }}/style/images/art/me2.jpg"></div>
                                 </div>
                                 <!--/.image-block -->
                                 <div class="container-fluid">
@@ -347,7 +349,7 @@
                             <div class="image-block-wrapper">
                                 <div class="image-block col-lg-4 col-xl-5">
                                     <div class="image-block-bg bg-image"
-                                        data-image-src="/themes/ccsg/style/images/art/me1.jpg"></div>
+                                        data-image-src="/themes/{{ $theme }}/style/images/art/me1.jpg"></div>
                                 </div>
                                 <!--/.image-block -->
                                 <div class="container-fluid">
