@@ -1,7 +1,7 @@
 <!-- /.wrapper -->
 <div class="wrapper light-wrapper">
     <div class="container inner">
-        <h2 class="section-title text-center">Album nổi bật</h2>
+        <h2 class="section-title text-center">Bài viết nổi bật</h2>
         <p class="lead larger text-center">Những chiếc ảnh <i>"xinhxan"</i> tại ChuyenCuaSaiGon</p>
         <div class="cube-carousel cbp boxed grid-view text-center">
             <div class="cbp-item">

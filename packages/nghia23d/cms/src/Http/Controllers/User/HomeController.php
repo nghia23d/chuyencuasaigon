@@ -27,7 +27,7 @@ class HomeController
           'blogHightLight' => $this->blogModel->getBlogHighLight(10),
         ];
 
-        return view('home');
+        return view('home', compact('data'));
     }
 
     public function pageBlog()

@@ -1,7 +1,7 @@
-<nav class="navbar wide transparent absolute inverse-text navbar-expand-lg">
-    <div class="container-fluid flex-row justify-content-center">
+<nav class="navbar wide transparent absolute inverse-text navbar-expand-lg @if (\Request::route()->getName() != 'home') custom-menu @endif">
+    <div class="container-fluid flex-row justify-content-center menu">
         <div class="navbar-header">
-            <div class="navbar-brand"><a href="index.html"><img src="#"
+            <div class="navbar-brand"><a href="/"><img src="#"
                         srcset="/themes/{{ $theme }}/style/images/ccsg.png 1x, style/images/ccsg.png 2x" alt="" /></a>
             </div>
             <div class="navbar-hamburger ml-auto d-lg-none d-xl-none"><button class="hamburger animate"

@@ -7,7 +7,7 @@
 
     @include('elements.background_text')
 
-    @include('elements.featured_albums')
+    @include('elements.featured_blog', ['data' => $data->blogHightLight])
 
     @include('elements.introduce')
 @endsection
