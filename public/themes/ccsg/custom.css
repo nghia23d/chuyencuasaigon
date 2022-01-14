@@ -64,3 +64,21 @@
 .banner--stick .menu {
     background: none;
 }
+
+.post-meta .cmt-meta-line {
+    padding-right: 15px;
+    position: relative;
+    font-size: 13px;
+}
+
+.post-meta .cmt-meta-line:not(:last-child):after {
+    position: absolute;
+    content: "|";
+    right: 8px;
+    top: -8px;
+    color: #6c757d !important;
+}
+
+.post-meta i {
+    color: #6c757d !important
+}

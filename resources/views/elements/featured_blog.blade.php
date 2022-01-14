@@ -4,97 +4,39 @@
         <h2 class="section-title text-center">Bài viết nổi bật</h2>
         <p class="lead larger text-center">Những chiếc ảnh <i>"xinhxan"</i> tại ChuyenCuaSaiGon</p>
         <div class="cube-carousel cbp boxed grid-view text-center">
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="themes/ccsg/style/images/saigon/saigon.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 18.12.2021- </h4>
-                </div>
-                <!-- /.box -->
-            </div>
+
             <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="themes/ccsg/style/images/saigon/saigon-1.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 17.12.2021-</h4>
+            @foreach ($data as $value)
+                <div class="cbp-item">
+                    <div class="box bg-white shadow p-30">
+                        <figure class="main polaroid overlay overlay1"><a href="{{ $value->slug_title }}.html"><img
+                                    src="{{ $value->thumbnail }}" alt="{{ $value->title }}" /></a>
+                            <figcaption>
+                                <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
+                            </figcaption>
+                        </figure>
+                        <h4 class="mb-0">{{ $value->title }}</h4>
+
+                        <div class="post-meta">
+                            <span class="cmt-meta-line byline">
+                                <i class="fa fa-user cmt-textcolor-skincolor"></i>
+                                Admin
+                            </span>
+                            <span class="cmt-meta-line comments-link">
+                                <i class="fa fa-clock-o cmt-textcolor-skincolor"></i>
+                                {{ $value->diff_for_humans }}
+                            </span>
+                            <span class="cmt-meta-line byline">
+                                <i class="fa fa-tags cmt-textcolor-skincolor"></i>
+                                {{ $value->category->title ?? 'Khác' }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- /.box -->
                 </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="themes/ccsg/style/images/saigon/saigon-2.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 16.12.2021-</h4>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="themes/ccsg/style/images/saigon/saigon-3.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 15.12.2021-</h4>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="/themes/ccsg/style/images/saigon/saigon-4.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 14.12.2021-</h4>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="/themes/ccsg/style/images/saigon/saigon-5.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 13.12.2021-</h4>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
-            <div class="cbp-item">
-                <div class="box bg-white shadow p-30">
-                    <figure class="main polaroid overlay overlay1"><a href="#"><img
-                                src="/themes/ccsg/style/images/saigon/saigon-6.jpg" alt="" /></a>
-                        <figcaption>
-                            <h5 class="text-uppercase from-top mb-0">Xem bài viết</h5>
-                        </figcaption>
-                    </figure>
-                    <h4 class="mb-0">-Sài Gòn ngày 12.12.2021-</h4>
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.cbp-item -->
+            @endforeach
+
         </div>
         <!-- /.cbp -->
     </div>

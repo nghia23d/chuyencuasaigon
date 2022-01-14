@@ -51,11 +51,11 @@
                 <div class="widget">
                     <h3 class="widget-title text-uppercase">Mạng Xã hội</h3>
                     <ul class="social social-mute social-s mt-10 mb-0">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/chuyencuarsaigon/"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/chuyencuasaigon"><i class="fa fa-twitter"></i></a></li>
+                        {{-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li> --}}
+                        <li><a href="https://www.instagram.com/chuyencuasaigon.official/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
