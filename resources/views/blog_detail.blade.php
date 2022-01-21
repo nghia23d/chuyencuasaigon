@@ -25,8 +25,8 @@
                                 <span class="comments"> <a href="#">0</a> </span>
                                 <span class="cmt-meta-line byline">
                                     <i class="fa fa-tags cmt-textcolor-skincolor"></i>
-                                    <a
-                                        href="/chuyen-muc/{{ $data->category->slug_title }}.html">{{ $data->category->title ?? 'Khác' }}</a>
+                                    {{-- <a
+                                        href="/chuyen-muc/{{ $data->category->slug_title }}.html">{{ $data->category->title ?? 'Khác' }}</a> --}}
                                 </span>
                             </div>
                             <div class="custom-content">
